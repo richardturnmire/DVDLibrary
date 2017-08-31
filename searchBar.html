@@ -1,0 +1,65 @@
+<!-- /************* S E A R C H   B A R  ************/ -->
+
+<div class="row" id="searchBar">
+    <div id="searchBar" class="col-md-12">
+        <div class="col-md-2">
+            <div class="form-group ">
+                <button type="button " id="create-dvd-button " class="btn btn-primary form-control " onclick="showAddForm() " s>Create DVD</button>                </div>
+        </div>
+        <div class="col-md-offset-3 col-md-7 ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <div class="col-md-2 ">
+                        <div class="form-group ">
+                            <button type="button " id="search-button " class="btn btn-primary form-control " onclick="searchDVDs() ">Search</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="form-group ">
+                            <select id="search-dropdown " class="form-control ">
+                                <option value="Search " selected disabled>Search Category</option>
+                                <option value="Title ">Title</option>
+                                <option value="Release ">Release Year</option>
+                                <option value="Director ">Director Name</option>
+                                <option value="Rating ">Rating</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="form-group ">
+                            <input type="text " id="searchArg " placeholder="Search Term " class="form-control ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <!-- /************* D V D   L I S T  ************/ -->
+
+        <div id="dvdTableDiv">
+
+            <div class="col-md-12 ">
+
+                <table id="dvdTable" class="table table-hover">
+                    <thead style="background-color: lightgrey">
+                        <th width="20% ">Title</th>
+                        <th width="20% ">Release Date</th>
+                        <th width="20% ">Director</th>
+                        <th width="5% ">Rating</th>
+                        <th width="5% ">Edit</th>
+                        <th width="5% ">Delete</th>
+                    </thead>
+
+                    <tbody id="contentRows"></tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</div>
